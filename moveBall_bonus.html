@@ -1,0 +1,175 @@
+<div id="ball1" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:green"></div>
+
+<div id="ball2" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top: 50px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background: blue"></div> 
+
+<div id="ball3" style="
+z-index:5;
+position:absolute;
+left:0px;
+top: 100px;
+width:50px;
+height:50px;
+border-radius:50%;
+background: purple"></div>
+
+<div id="ball4" style="
+z-index:5;
+position:absolute;
+left:0px;
+top: 150px;
+width:50px;
+height:50px;
+border-radius:50%;
+background: orange"></div>
+
+<div id="ball5" style="
+z-index:5;
+position:absolute;
+left:0px;
+top: 200px;
+width:50px;
+height:50px;
+border-radius:50%;
+background: red"></div>
+
+<div id="ball6" style="
+z-index:5;
+position:absolute;
+left:0px;
+top: 250px;
+width:50px;
+height:50px;
+border-radius:50%;
+background: yellow"></div>
+
+<div id="ball7" style="
+z-index:5;
+position:absolute;
+left:0px;
+top: 300px;
+width:50px;
+height:50px;
+border-radius:50%;
+background: pink"></div>
+<script>
+
+
+
+var velocity = 1;
+var position = 0;
+var reverse = false;
+var Xmax = 300;
+var Xmin = 0;
+var ball1 = document.getElementById('ball1');
+var ball2 = document.getElementById('ball2')
+var ball3 = document.getElementById('ball3')
+var ball4 = document.getElementById('ball4')
+var ball5 = document.getElementById('ball5')
+var ball6 = document.getElementById('ball6')
+var ball7 = document.getElementById('ball7')
+
+function moveBall1() {
+  var Xmin = 0;
+  var Xmax = 300;
+  if(reverse===false){ 
+    position = position + velocity;
+    ball1.style.left=position + 'px';};
+  if(reverse===true){
+    position = position - velocity;
+    ball1.style.left=position + 'px';};
+  if(position>=Xmax || position === Xmin) {reverse= !reverse};
+}
+function moveBall2() {
+  var Xmin = 0;
+  var Xmax = 300;
+  if(reverse===false){ 
+    position = position + velocity;
+    ball2.style.left=position + 'px';};
+  if(reverse===true){
+    position = position - velocity;
+    ball2.style.left=position + 'px';};
+  if(position>=Xmax || position === Xmin) {reverse= !reverse};
+}
+
+function moveBall3() {
+  var Xmin = 0;
+  var Xmax = 300;
+  if(reverse===false){ 
+    position = position + velocity;
+    ball3.style.left=position + 'px';};
+  if(reverse===true){
+    position = position - velocity;
+    ball3.style.left=position + 'px';};
+  if(position>=Xmax || position === Xmin) {reverse= !reverse};
+}
+
+function moveBall4() {
+  var Xmin = 0;
+  var Xmax = 300;
+  if(reverse===false){ 
+    position = position + velocity;
+    ball4.style.left=position + 'px';};
+  if(reverse===true){
+    position = position - velocity;
+    ball4.style.left=position + 'px';};
+  if(position>=Xmax || position === Xmin) {reverse= !reverse};
+}
+function moveBall5() {
+  var Xmin = 0;
+  var Xmax = 300;
+  if(reverse===false){ 
+    position = position + velocity;
+    ball5.style.left=position + 'px';};
+  if(reverse===true){
+    position = position - velocity;
+    ball5.style.left=position + 'px';};
+  if(position>=Xmax || position === Xmin) {reverse= !reverse};
+}
+
+function moveBall6() {
+  var Xmin = 0;
+  var Xmax = 300;
+  if(reverse===false){ 
+    position = position + velocity;
+    ball6.style.left=position + 'px';};
+  if(reverse===true){
+    position = position - velocity;
+    ball6.style.left=position + 'px';};
+  if(position>=Xmax || position === Xmin) {reverse= !reverse};
+}
+
+function moveBall7() {
+  var Xmin = 0;
+  var Xmax = 300;
+  if(reverse===false){ 
+    position = position + velocity;
+    ball7.style.left=position + 'px';};
+  if(reverse===true){
+    position = position - velocity;
+    ball7.style.left=position + 'px';};
+  if(position>=Xmax || position === Xmin) {reverse= !reverse};
+}
+setInterval(moveBall1, 200)
+setInterval(moveBall2, 250)
+setInterval(moveBall3, 150)
+setInterval(moveBall4, 100)
+setInterval(moveBall5, 50)
+setInterval(moveBall6, 175)
+setInterval(moveBall7, 80)
+</script>
